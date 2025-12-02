@@ -1,0 +1,15 @@
+.layout {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #fff;
+  font-size: calc(10px + 2vmin);
+  color: var(--color-elastic-ink);
+}
+
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
