@@ -31,7 +31,7 @@ const QrCodeScanner: React.FC<Props> = ({ isOpen, onScan, onError }) => {
     >
       <Scanner
         onScan={handleScan}
-        onError={(error) => onError(error)}
+        onError={(error) => onError(error as any)}
         paused={isPaused}
         formats={['qr_code']}
         components={{

@@ -6,18 +6,15 @@ import { useConfettiCanon } from '@/hooks/useConfettiCanon'
 
 interface Props {
   isOpen: boolean
-  scanNumber: number
+  scanNumber: number | null
 }
 
-// const grandPrizeScanNumber = 87
-// const runnerUpScanNumbers = [27, 39, 57, 70, 105, 160, 190, 210, 240, 275]
-
-const grandPrizeScanNumber = 3
-const runnerUpScanNumbers = [2]
+const grandPrizeScanNumber = 87
+const runnerUpScanNumbers = [27, 39, 57, 70, 105, 160, 190, 210, 240, 275]
 
 const ResultModal: React.FC<Props> = ({ isOpen, scanNumber }) => {
   const isGrandPrize = scanNumber === grandPrizeScanNumber
-  const isRunnerUp = runnerUpScanNumbers.includes(scanNumber) ?? false
+  const isRunnerUp = runnerUpScanNumbers.includes(Number(scanNumber)) ?? false
 
   const { fire } = useConfettiCanon({
     duration: 5000,
@@ -56,7 +53,7 @@ const ResultModal: React.FC<Props> = ({ isOpen, scanNumber }) => {
         )}
         {isRunnerUp && (
           <p className="text-lg font-inter text-ink">
-            You have won a pair of <strong>Bose Headphones</strong>!
+            You have won a pair ofg<strong>Bose Headphones</strong>!
             <img
               src={BoseHeadphonesImage}
               alt="Bose Headphones"
