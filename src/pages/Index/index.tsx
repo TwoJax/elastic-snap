@@ -8,7 +8,7 @@ import { useSupabase } from '@/hooks/useSupabase'
 const Index: React.FC = memo(() => {
   const { db } = useSupabase()
 
-  const [showResultModal, setShowResultModal] = useState(false)
+  const [showResultModal, setShowResultModal] = useState(true)
   const [showQrCodeScanner, setShowQrCodeScanner] = useState(false)
   const [scanNumber, setScanNumber] = useState<number | null>(null)
 

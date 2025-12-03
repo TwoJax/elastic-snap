@@ -53,7 +53,7 @@ const ResultModal: React.FC<Props> = ({ isOpen, scanNumber }) => {
         )}
         {isRunnerUp && (
           <p className="text-lg font-inter text-ink">
-            You have won a pair ofg<strong>Bose Headphones</strong>!
+            You have won a pair of <strong>Bose Headphones</strong>!
             <img
               src={BoseHeadphonesImage}
               alt="Bose Headphones"
