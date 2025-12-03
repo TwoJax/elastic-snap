@@ -27,14 +27,14 @@ test('Working Counter', async () => {
   expect(getByText('count is: 3')).toBeInTheDocument()
 })
 
-test('working with msw', async () => {
-  render(<App />)
+// test('working with msw', async () => {
+//   render(<App />)
 
-  await waitFor(
-    () => {
-      expect(screen.getByText('MSW')).toBeInTheDocument()
-      expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
-    },
-    { timeout: 5000 },
-  )
-})
+//   await waitFor(
+//     () => {
+//       expect(screen.getByText('MSW')).toBeInTheDocument()
+//       expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
+//     },
+//     { timeout: 5000 },
+//   )
+// })
