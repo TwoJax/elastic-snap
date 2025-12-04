@@ -10,7 +10,9 @@ interface Props {
 }
 
 const grandPrizeScanNumber = 87
-const runnerUpScanNumbers = [27, 39, 57, 70, 105, 160, 190, 210, 240, 275]
+const runnerUpScanNumbers = [
+  27, 39, 57, 70, 105, 160, 190, 210, 240, 275, 280, 285, 290, 295,
+]
 
 const ResultModal: React.FC<Props> = ({ isOpen, scanNumber }) => {
   const isGrandPrize = scanNumber === grandPrizeScanNumber
