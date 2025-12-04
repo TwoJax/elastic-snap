@@ -12,7 +12,7 @@ interface Props {
 const grandPrizeScanNumber = 87
 const runnerUpScanNumbers = [
   27, 39, 57, 70, 105, 160, 190, 210, 240, 275, 280, 285, 290, 295, 300, 317,
-  314, 315, 316,
+  318, 319, 320,
 ]
 
 const ResultModal: React.FC<Props> = ({ isOpen, scanNumber }) => {
