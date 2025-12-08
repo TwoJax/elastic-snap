@@ -28,7 +28,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.86.0",
+    "@supabase/supabase-js": "^2.87.0",
     "@yudiel/react-qr-scanner": "^2.4.1",
     "canvas-confetti": "^1.9.4",
     "clsx": "^2.1.1",
