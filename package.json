@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.90.1",
-    "@yudiel/react-qr-scanner": "^2.5.0",
+    "@yudiel/react-qr-scanner": "^2.5.1",
     "canvas-confetti": "^1.9.4",
     "clsx": "^2.1.1",
     "react": "^19.2.3",
